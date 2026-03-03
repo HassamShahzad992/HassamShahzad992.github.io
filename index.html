@@ -50,6 +50,7 @@
 
 <!-- ══════════════════════ HERO ══════════════════════ -->
 <section class="hero" id="home">
+ 
   <canvas id="hero-canvas"></canvas>
   <div class="hero-diagonal"></div>
 
@@ -90,6 +91,77 @@
     <span>Scroll</span>
   </div>
 </section>
+
+ <!--
+  ★ SOLAR SYSTEM — paste this block INSIDE your <section class="hero"> tag,
+    right before your <div class="hero-content"> div.
+  Nothing else in your HTML needs to change.
+-->
+
+<div class="solar-system" id="solarSystem">
+
+  <!-- Decorative orbit rings -->
+  <div class="orbit-ring or-1"></div>
+  <div class="orbit-ring or-2 dashed"></div>
+  <div class="orbit-ring or-3"></div>
+  <div class="orbit-ring or-4 dashed"></div>
+  <div class="orbit-ring or-5"></div>
+
+  <!-- Sun: your identity core -->
+  <div class="sun">
+    <div class="sun-label">HASSAM<br>SHAHZAD</div>
+  </div>
+
+  <!-- PLANET 1: HTML5 — innermost, fastest -->
+  <div class="planet-orbit o-1 sp-1" style="animation-delay:-1s">
+    <div class="planet p-html sp-1" style="animation-delay:-1s">
+      <div class="planet-body">
+        <span style="font-size:.55rem;color:#fff;">H5</span>
+        <!-- mini moon on HTML -->
+        <div class="moon-orbit"><div class="moon"></div></div>
+      </div>
+      <div class="planet-name">HTML5</div>
+    </div>
+  </div>
+
+  <!-- PLANET 2: CSS3 -->
+  <div class="planet-orbit o-2 sp-2" style="animation-delay:-4s">
+    <div class="planet p-css sp-2" style="animation-delay:-4s">
+      <div class="planet-body"><span style="font-size:.52rem;color:#fff;">CSS</span></div>
+      <div class="planet-name">CSS3</div>
+    </div>
+  </div>
+
+  <!-- PLANET 3: JavaScript -->
+  <div class="planet-orbit o-3 sp-3" style="animation-delay:-7s">
+    <div class="planet p-js sp-3" style="animation-delay:-7s">
+      <div class="planet-body"><span style="font-size:.6rem;color:#333;">JS</span></div>
+      <div class="planet-name">JavaScript</div>
+    </div>
+  </div>
+
+  <!-- PLANET 4: Bootstrap -->
+  <div class="planet-orbit o-4 sp-4" style="animation-delay:-12s">
+    <div class="planet p-bs sp-4" style="animation-delay:-12s">
+      <div class="planet-body"><span style="font-size:.55rem;color:#fff;">Bs</span></div>
+      <div class="planet-name">Bootstrap</div>
+    </div>
+  </div>
+
+  <!-- PLANET 5: GitHub — outermost, slowest -->
+  <div class="planet-orbit o-5 sp-5" style="animation-delay:-20s">
+    <div class="planet p-gh sp-5" style="animation-delay:-20s">
+      <div class="planet-body">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff">
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 6.598c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+        </svg>
+      </div>
+      <div class="planet-name">GitHub</div>
+    </div>
+  </div>
+
+</div>
+<!-- END SOLAR SYSTEM -->
 
 <!-- ══════════════════════ MARQUEE ══════════════════════ -->
 <div class="marquee-strip">
@@ -256,7 +328,7 @@
         <div class="pc-shimmer"></div>
         <div class="pc-icon">🎮</div>
         <div class="pc-overlay">
-          <a href="quiz.html" class="pc-btn fill">Live Demo</a>
+          <a href="/quiz_app/quiz.html" class="pc-btn fill">Live Demo</a>
           <a href="#" class="pc-btn wire">GitHub →</a>
         </div>
       </div>
@@ -274,7 +346,7 @@
         <div class="pc-shimmer"></div>
         <div class="pc-icon">🐍</div>
         <div class="pc-overlay">
-          <a href="snake.html" class="pc-btn fill">Live Demo</a>
+          <a href="/snake_game/snake.html" class="pc-btn fill">Live Demo</a>
           <a href="#" class="pc-btn wire">GitHub →</a>
         </div>
       </div>
@@ -292,7 +364,7 @@
         <div class="pc-shimmer"></div>
         <div class="pc-icon">📋</div>
         <div class="pc-overlay">
-          <a href="todo-list.html" class="pc-btn fill">Live Demo</a>
+          <a href="/todo-list/todo-list.html" class="pc-btn fill">Live Demo</a>
           <a href="#" class="pc-btn wire">GitHub →</a>
         </div>
       </div>
@@ -346,7 +418,7 @@
         <div class="pc-shimmer"></div>
         <div class="pc-icon">🌦️</div>
         <div class="pc-overlay">
-          <a href="weather.html" class="pc-btn fill">Live Demo</a>
+          <a href="/weather_app/weather.html" class="pc-btn fill">Live Demo</a>
           <a href="#" class="pc-btn wire">GitHub →</a>
         </div>
       </div>
@@ -433,7 +505,3 @@
 <script src="portfolio.js"></script>
 </body>
 </html>
-
-
-
-
